@@ -18,7 +18,7 @@
                 <div class="col-sm-6">
                   <input type="text" name="message" id="message-input" class="form-control">
                 </div>
-            </div>
+    </div>
 
                   <!-- Add Message Button -->
                   <div class="form-group">
@@ -30,15 +30,16 @@
                   </div>
                 </form>
                 <div class="card-body">
+                  <label for="message" class="col-sm-3 control-label">Recent Message</label>
                   <tbody>
-                    @foreach ($messages as $message)
+                    @for ($i = 0; $i < 10; $i++)
                       <tr>
                         <td class="table-text">
-                          <div>{{ $message->message }}</div>
+                          <div>{{ $messages[count($messages)-$i-1]->message }}</div>
                         </td>
                         <td></td>
                       </tr>
-                    @endforeach
+                    @endfor
                   <tbody>
                 </div>
             </div>
