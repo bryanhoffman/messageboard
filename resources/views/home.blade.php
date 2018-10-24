@@ -14,9 +14,9 @@
 
             <!-- Message Name -->
             <div style="margin-top: 20px;"  class="form-group">
-                <label for="task-name" class="col-sm-3 control-label">Message</label>
+                <label for="message" class="col-sm-3 control-label">Message</label>
                 <div class="col-sm-6">
-                  <input type="text" name="name" id="task-name" class="form-control">
+                  <input type="text" name="message" id="message-input" class="form-control">
                 </div>
             </div>
 
