@@ -30,7 +30,7 @@
                   </div>
                 </form>
                 <div class="card-body">
-                  <label for="message" class="col-sm-3 control-label">Recent Message</label>
+                  <label for="message" class="col-sm-3 control-label">Recent Messages</label>
                   <tbody>
                     @for ($i = 0; $i < 10; $i++)
                       <tr>
@@ -41,6 +41,7 @@
                       </tr>
                     @endfor
                   <tbody>
+                    <a href="/archive/1">Check out the archives!</a>
                 </div>
             </div>
         </div>

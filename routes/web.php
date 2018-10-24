@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/messages', 'MessageController@index');
 Route::post('/message', 'MessageController@store');
 Route::delete('/message/{task}', 'MessageContoller@destroy');
+
+Route::get('/archive/{pg}', 'HomeController@archives')->name('archives');

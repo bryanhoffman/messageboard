@@ -30,4 +30,16 @@ class HomeController extends Controller
             'messages' => $messages,
         ]);
     }
+
+    public function archives($pg)
+    {
+        $messages = Message::all();
+
+        return view('archives', [
+            'messages' => $messages,
+            'pg' => $pg,
+        ]);
+    }
+
+
 }
