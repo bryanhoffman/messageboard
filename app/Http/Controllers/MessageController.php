@@ -25,7 +25,7 @@ class MessageController extends Controller
 
     public function store(Request $request)
     {
-        $request->user()->messages()->create([
+        $request->user()->message()->create([
              'message' => $request->message,
         ]);
 
