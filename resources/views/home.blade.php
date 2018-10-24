@@ -30,6 +30,16 @@
                   </div>
                 </form>
                 <div class="card-body">
+                  <tbody>
+                    @foreach ($messages as $message)
+                      <tr>
+                        <td class="table-text">
+                          <div>{{ $message->message }}</div>
+                        </td>
+                        <td></td>
+                      </tr>
+                    @endforeach
+                  <tbody>
                 </div>
             </div>
         </div>
