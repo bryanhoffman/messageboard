@@ -35,12 +35,13 @@
                     @for ($i = 0; $i < 10; $i++)
                       <tr>
                         <td class="table-text">
-                          <div>{{ $messages[count($messages)-$i-1]->message }}</div>
+                          <div>"{{ $messages[count($messages)-$i-1]->message }}" Posted by <a href="mailto:{{ $messages[count($messages)-$i-1]->user->email }}" title="{{ $messages[count($messages)-$i-1]->user->email }}">{{ $messages[count($messages)-$i-1]->user->name }}</a></div>
                         </td>
                         <td></td>
                       </tr>
                     @endfor
                   <tbody>
+                    <hr>
                     <a href="/archive/1">Check out the archives!</a>
                 </div>
             </div>
