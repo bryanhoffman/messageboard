@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/messages', 'MessageController@index');
+Route::post('/message', 'MessageController@store');
+Route::delete('/message/{task}', 'MessageContoller@destroy');
